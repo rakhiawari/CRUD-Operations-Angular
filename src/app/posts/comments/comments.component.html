@@ -1,1 +1,12 @@
-<p>comments works!</p>
+<div class="size" *ngFor="let comments of commentsData">
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">{{comments.name}}</h5>
+            <h6 class="card-subtitle mb-2 text-muted">{{comments.email}}</h6>
+            <p class="card-text">{{comments.body}}</p>
+            <hr>
+            <!-- <p>Post Id: {{comments.postId}}</p> -->
+        </div>
+    </div>
+</div>
+<!-- <p>Comments component</p> -->
