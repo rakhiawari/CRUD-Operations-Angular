@@ -5,3 +5,7 @@
 .comment-box {
     color: black;
 }
+
+label {
+    margin-right: 10px;
+}

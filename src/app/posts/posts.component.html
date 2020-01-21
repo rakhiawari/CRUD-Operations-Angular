@@ -11,9 +11,14 @@
             <div class="card-body">
                 <h5 class="card-title">{{post.title}}</h5>
                 <p class="card-text">{{post.body}}</p>
-                <a class="comment-box" [routerLink]="['/comments', post.id]"><i class="fa fa-comment-o" aria-hidden="true"></i></a>
-                <p>User Id: {{post.userId}}, Post Id:{{post.id}}</p>
-                <p></p>
+                <a class="comment-box" [routerLink]="['/comments', post.id]"><i class="fa fa-comment" aria-hidden="true"></i></a>
+                <hr>
+                <a class="comment-box" [routerLink]="['/postsBy', post.userId]">
+                    <i class="fa fa-user" aria-hidden="true"></i> </a>
+                <label>: {{post.userId}}</label>
+                <a class="comment-box">
+                    <i class="fa fa-sticky-note" aria-hidden="true"></i></a>
+                <label>: {{post.id}}</label>
             </div>
         </div>
     </div>

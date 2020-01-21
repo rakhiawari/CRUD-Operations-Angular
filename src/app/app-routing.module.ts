@@ -1,3 +1,4 @@
+import { UserComponent } from './../../../routing/src/app/user/user.component';
 import { CommentsComponent } from './posts/comments/comments.component';
 import { PostsComponent } from './posts/posts.component';
 import { NgModule } from '@angular/core';
@@ -16,6 +17,9 @@ const routes: Routes = [
 },
 {
   path:'posts/:id', component: PostsComponent, pathMatch: 'full'
+},
+{
+  path:'postsBy/:id', component: UserComponent, pathMatch: 'full'
 },
 {
   path:'comments/:id', component: CommentsComponent, pathMatch: 'full'

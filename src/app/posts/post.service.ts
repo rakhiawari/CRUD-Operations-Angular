@@ -18,8 +18,14 @@ export class PostService {
   getPosts(): Observable<Post> {
     return this.http.get<Post>(this.base_path+this.base_key);
   }
+
   getCommentsByPostId(id){
     console.log(id);
     return this.http.get<Comment>(this.base_path+"comments"+"?postId="+id);
+  }
+
+  getPostByUserId(id){
+    console.log(id);
+    return this.http.get<Post>(this.base_path+this.base_key+"?userId="+id);
   }
 }

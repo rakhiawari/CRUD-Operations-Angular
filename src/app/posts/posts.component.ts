@@ -24,5 +24,6 @@ export class PostsComponent implements OnInit {
       this.userPosts = response;
     })
   }
+  
 
 }
